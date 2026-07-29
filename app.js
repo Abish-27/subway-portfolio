@@ -413,6 +413,10 @@ function drawStation(id, wp, station, primaryLine) {
     }
   }
 
+  if (station.markerLogo) {
+    drawMarkerLogo(core, id, station.markerLogo);
+  }
+
   // ── Label ──
   drawStationLabel(g, id, station, primaryLine);
 
@@ -614,6 +618,35 @@ function drawTtcTerminusMarker(g, line) {
 // ── Founder (NYC subway / NJ Transit): plain white circle with thin dark outline.
 function drawFounderStation(g) {
   g.appendChild(circle(0, 0, 8, { fill: 'var(--bg-paper)', stroke: 'var(--ink)', 'stroke-width': 2.25 }));
+}
+
+function drawMarkerLogo(g, id, src) {
+  const safeId = String(id).replace(/[^a-z0-9_-]/gi, '-');
+  const clipId = `station-logo-clip-${safeId}`;
+  const r = 6.5;
+
+  const clip = document.createElementNS(SVG_NS, 'clipPath');
+  clip.setAttribute('id', clipId);
+  clip.appendChild(circle(0, 0, r, {}));
+  g.appendChild(clip);
+
+  g.appendChild(circle(0, 0, r + 0.8, {
+    fill: '#fff',
+    stroke: 'rgba(0,0,0,0.18)',
+    'stroke-width': 0.7,
+    'pointer-events': 'none',
+  }));
+
+  const image = document.createElementNS(SVG_NS, 'image');
+  image.setAttribute('href', src);
+  image.setAttribute('x', -r);
+  image.setAttribute('y', -r);
+  image.setAttribute('width', r * 2);
+  image.setAttribute('height', r * 2);
+  image.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+  image.setAttribute('clip-path', `url(#${clipId})`);
+  image.style.pointerEvents = 'none';
+  g.appendChild(image);
 }
 
 // ── Journey (Mumbai Metro): outline-only stadium pill that the line passes through.

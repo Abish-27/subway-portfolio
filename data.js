@@ -617,6 +617,7 @@ const STATIONS = {
     lineIds: ['founders'],
     city: 'Co-Founder & CTO',
     ticketBlurb: 'Pre-launch booking marketplace helping entertainment venues fill off-peak slots with targeted local deals.',
+    markerLogo: 'portfolio-content/RedLine/tides-logo.png',
     postcardImage: 'portfolio-content/RedLine/tides-logo.png',
     postcardKicker: 'venture station',
     postcardTitle: 'Tides',
