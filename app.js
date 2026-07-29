@@ -1435,6 +1435,7 @@ function renderContentWithMedia(s) {
   const [leadImage, ...restImages] = media;
   const c = s.content || {};
   const splitProjectFeatures = c.kind === 'project' && c.featureLayout === 'below-media';
+  const galleryGridClass = c.galleryLayout === 'two-column' ? ' inline-shot-grid-two' : '';
   const leadContent = splitProjectFeatures ? renderProject(c, { includeFeatures: false }) : stationContent;
   if (c.mediaLayout === 'side-by-side') {
     return `
@@ -1454,7 +1455,7 @@ function renderContentWithMedia(s) {
     </div>
     ${splitProjectFeatures ? renderProjectFeatures(c, { standalone: true }) : ''}
     ${restImages.length ? `
-      <div class="inline-shot-grid">
+      <div class="inline-shot-grid${galleryGridClass}">
         ${restImages.map((image, i) => renderInlineMediaFigure(image, s.name, i + 2)).join('')}
       </div>
     ` : ''}

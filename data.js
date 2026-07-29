@@ -622,9 +622,9 @@ const STATIONS = {
     postcardKicker: 'venture station',
     postcardTitle: 'Tides',
     funFactLabel: 'Current Status',
-    funFact: 'The live public site is up at tides.deals while the booking marketplace, vendor tools, recommendation engine, and mobile app continue toward launch.',
+    funFact: 'The current waitlist page is at tides.deals while the booking marketplace, vendor tools, recommendation engine, and mobile app continue toward launch.',
     galleryImages: [
-      { src: 'portfolio-content/RedLine/tides1.png', caption: 'Live Tides website at tides.deals' },
+      { src: 'portfolio-content/RedLine/tides1.png', caption: 'Current Tides waitlist page at tides.deals' },
       { src: 'portfolio-content/RedLine/tides2.png', caption: 'Consumer home feed with venues, discounts, and offers' },
       { src: 'portfolio-content/RedLine/tides3.png', caption: 'Pick For Me AI recommendation flow' },
       { src: 'portfolio-content/RedLine/tides4.png', caption: 'Map-based discovery for nearby activities' },
@@ -639,8 +639,9 @@ const STATIONS = {
       stack: ['React Native', 'TypeScript', 'Expo', 'Supabase', 'PostgreSQL', 'Maps', 'AI Recommendations'],
       body: 'I am the sole engineer architecting and building Tides across the website, app experience, backend infrastructure, business onboarding flow, and deal-management system. The product helps activity businesses fill quieter time slots by offering targeted deals to nearby customers, with discovery built around venue offers, availability, maps, and personalized picks.',
       links: [
-        { label: 'Live Site', url: 'https://tides.deals' },
+        { label: 'Waitlist Page', url: 'https://tides.deals' },
       ],
+      galleryLayout: 'two-column',
       featureLayout: 'below-media',
       featuresTitle: 'What I Am Building',
       featureSections: [

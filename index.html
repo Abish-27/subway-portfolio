@@ -1557,6 +1557,9 @@
   .inline-shot-grid-pair {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .inline-shot-grid-two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   body.night .inline-shot {
     background: var(--bg-paper);
     box-shadow:
@@ -2490,6 +2493,9 @@
       height: clamp(220px, 42vh, 380px);
     }
     .inline-shot-grid-pair {
+      grid-template-columns: 1fr;
+    }
+    .inline-shot-grid-two {
       grid-template-columns: 1fr;
     }
     .postcard-col, .content-col, .gallery-col {
