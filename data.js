@@ -615,15 +615,59 @@ const STATIONS = {
   'tides': {
     name: 'Tides',
     lineIds: ['founders'],
-    city: 'New Jersey',
-    ticketBlurb: 'Current mobile venture: a React Native and Supabase platform for discovering discounted local social experiences.',
+    city: 'Co-Founder & CTO',
+    ticketBlurb: 'Pre-launch booking marketplace helping entertainment venues fill off-peak slots with targeted local deals.',
+    postcardImage: 'portfolio-content/RedLine/tides-logo.png',
+    postcardKicker: 'venture station',
+    postcardTitle: 'Tides',
+    funFactLabel: 'Current Status',
+    funFact: 'The live public site is up at tides.deals while the booking marketplace, vendor tools, recommendation engine, and mobile app continue toward launch.',
+    galleryImages: [
+      { src: 'portfolio-content/RedLine/tides1.png', caption: 'Live Tides website at tides.deals' },
+      { src: 'portfolio-content/RedLine/tides2.png', caption: 'Consumer home feed with venues, discounts, and offers' },
+      { src: 'portfolio-content/RedLine/tides3.png', caption: 'Pick For Me AI recommendation flow' },
+      { src: 'portfolio-content/RedLine/tides4.png', caption: 'Map-based discovery for nearby activities' },
+      { src: 'portfolio-content/RedLine/tides5.png', caption: 'Vendor dashboard for creating and managing discounts' },
+      { src: 'portfolio-content/RedLine/tides6.png', caption: 'Sample redeemable coupon experience' },
+    ],
     content: {
       kind: 'project',
       title: 'Tides',
-      tagline: 'Activity discovery platform — find local venues for discounted social experiences.',
-      meta: 'Jul 2025 — Present',
-      stack: ['TypeScript', 'React Native', 'Expo', 'Supabase', 'PostgreSQL'],
-      body: 'Full-stack ownership: UI, database architecture, real-time backend, and the venue partnership flow. Built mobile-first with native gesture handling on both iOS and Android.',
+      tagline: 'Booking marketplace for off-peak entertainment deals at venues like bowling alleys, golf venues, and escape rooms.',
+      meta: 'Co-Founder & CTO · Jul 2025 to Present',
+      stack: ['React Native', 'TypeScript', 'Expo', 'Supabase', 'PostgreSQL', 'Maps', 'AI Recommendations'],
+      body: 'I am the sole engineer architecting and building Tides across the website, app experience, backend infrastructure, business onboarding flow, and deal-management system. The product helps activity businesses fill quieter time slots by offering targeted deals to nearby customers, with discovery built around venue offers, availability, maps, and personalized picks.',
+      links: [
+        { label: 'Live Site', url: 'https://tides.deals' },
+      ],
+      featureLayout: 'below-media',
+      featuresTitle: 'What I Am Building',
+      featureSections: [
+        {
+          title: 'Marketplace Core',
+          items: [
+            { label: 'Off-peak deals', detail: 'Venue partners can create targeted discounts for slower time slots instead of leaving capacity unused.' },
+            { label: 'Booking flow', detail: 'The app experience is built around finding an activity, choosing an offer, and redeeming a coupon cleanly.' },
+            { label: 'Mobile and web', detail: 'The system is being designed across consumer mobile screens, the public website, and partner-facing tools.' },
+          ],
+        },
+        {
+          title: 'Engineering Ownership',
+          items: [
+            { label: 'Sole engineer', detail: 'I am owning the architecture and implementation across React Native, Expo, TypeScript, Supabase, and PostgreSQL.' },
+            { label: 'Backend design', detail: 'Designed the schema and backend integrations that power venue offers, availability, customer discovery, and partner workflows.' },
+            { label: 'Partner requirements', detail: 'Translate feedback from prospective venues into product features and engineering decisions across the stack.' },
+          ],
+        },
+        {
+          title: 'Discovery Intelligence',
+          items: [
+            { label: 'Pick For Me', detail: 'Built a custom recommendation flow that selects the best option based on preferences and swipe history.' },
+            { label: 'Map discovery', detail: 'Users can explore nearby activity deals geographically instead of only scrolling through a flat list.' },
+            { label: 'Discount optimization', detail: 'Working on AI-assisted discount optimization so offers can better match demand, timing, and user intent.' },
+          ],
+        },
+      ],
     },
   },
 
